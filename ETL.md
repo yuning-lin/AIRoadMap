@@ -20,12 +20,12 @@ Extract、Load 可能使用工具類似，故著重在 Transform
 ### 類別型資料
 * label encoding（大小順序沒有意義的編碼）  
 
-班別|編碼
-:--:|:--:
-A|0
-B|1
-A|0
-C|2
+班別| |編碼
+:--:|:--:|:--:
+A| ＞ |0
+B| ＞ |1
+A| ＞ |0
+C| ＞ |2
 * one hot encoding（不帶大小數字的編碼，但要小心若有很多類別，遇到要求反矩陣的演算法可能會求不出）  
 
 <table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="0" style="width:414.95pt;border-collapse:collapse;border:none;mso-border-alt:
@@ -210,7 +210,7 @@ C|2
 * 數值編碼（將有順序關係的類別對映成數值做代表）
 
 班別|成績|  |班平均（編碼）
----|---|---|---
+:---:|:---:|---|:---:
 A | 90| ＞ |92
 B | 80| ＞ |80
 A | 94| ＞ |92
