@@ -19,17 +19,13 @@ Extract、Load 可能使用工具類似，故著重在 Transform
 根據資料型態、分析方式有不同的處理手法  
 ### 時間序列資料（Time Series）
 ```mermaid
-graph LR
-
-A(Start)
-
-A --> B[Look for an item]
-
-B --> C{Did you find it?}
-C -->|Yes| D(Stop looking)
-C -->|No| E{Do you need it?}
-E -->|Yes| B
-E -->|No| D
+graph LR;
+    時序成份-->系統性;
+    系統性-->水平;
+    系統性-->趨勢;
+    系統性-->週期;
+    時序成份-->非系統性;
+    非系統性-->噪音;
 ```
 
 * 傳統統計模型（單維度不做特徵工程）
