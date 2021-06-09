@@ -470,7 +470,7 @@ graph LR;
   <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='font-family:"新細明體",serif;
   mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
   新細明體;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri;
-  mso-hansi-theme-font:minor-latin'>秒、分、時、天、周、月、季、年，有特殊循環模式</span></p>
+  mso-hansi-theme-font:minor-latin'>秒、分、時、天、周、月、季、年、早午晚、上下班，有特殊循環模式</span></p>
   </td>
   <td width=550 valign=top style='width:13.0cm;border-top:none;border-left:
   none;border-bottom:solid white 1.0pt;mso-border-bottom-themecolor:background1;
