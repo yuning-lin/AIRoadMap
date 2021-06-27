@@ -16,7 +16,7 @@ python 套件|公式|規範範圍|適用情境
 ---|---|---|---
 `scale` `StandardScaler`|$\frac{x_i-\mu}{\sigma}$|大部分介於 [-3,3]|不改變原始分布、讓不同量級分布的變數可一起比較
 `RobustScaler`|$\frac{x_i-median(x_i)}{IQR}$|大部分介於 [-3,3]|改善離群值的影響，不改變原始分布、讓不同量級分布的變數可一起比較
-`MinMaxScaler`|$\frac{x_i-x_min}{x_max-x_min}$|介於 [0,1]|改變原始分布、提高迭代求解速度
+`MinMaxScaler`|$\frac{x_i-x_{min}}{x_{max}-x_{min}}$|介於 [0,1]|改變原始分布、提高迭代求解速度
 `MaxAbsScaler`|$\frac{x_i}{max(abs(x_i))}$|介於 [-1,1]|改變原始分布、提高迭代求解速度
 
 ### python 相關套件
