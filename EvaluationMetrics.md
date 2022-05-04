@@ -6,7 +6,7 @@
 名稱|公式|適用時機|特點
 ----|----|----|----
 算術平均數<br>arithmetic mean|$\frac {\sum_{i=1}^{n}{x_{i}}}{n}$|當數值單位一樣時適用|可以接受正負數及零，但易受極端值影響<br>為常見濃縮變數表徵
-幾何平均數<br>geometric mean|$\sqrt[n]{x_{i} \* ... \* x_{n}}$|當數值單位不一樣時適用|不適用於有零、負數的情境<br>也因為乘法性質可以處理不同數值單位，更可以彙總具有乘法或指數關係的數據；
+幾何平均數<br>geometric mean|$\sqrt[n]{x_{i} \* ... \* x_{n}}$|當數值單位不一樣時適用|不適用於有零、負數的情境<br>也因為乘法性質可以處理不同數值單位，更可以彙總具有乘法或指數關係的數據
 調和平均數<br>harmonic mean|$\frac{n}{\sum_{i=1}^{n}{\frac{1}{x_{i}}}}$|當數值為不同度量方法計算的比率時適用|有零時不能使用，極小值的影響比極大值的影響更甚<br>一般可以用在相同距離但速率不同時，平均速率的計算
 
 ## 適用於分類模型的指標
@@ -21,12 +21,12 @@
   
 名稱|公式|特點|範例
 ----|----|----|----
-Accuracy|\frac{TP+TN}{TP+FP+FN+TN}$|表所有個體被正確預測的比率<br>為最常見指標，但遇到不平衡的資料會失效|EX：偵測垃圾訊息<br>100 封信件裡僅有一封是垃圾信件<br>當全部都判為正常時，accuracy=0.99=\frac{0+99}{0+0+1+99}<br>其實模型沒有起到偵測作用
+Accuracy|$\frac{TP+TN}{TP+FP+FN+TN}$|表所有個體被正確預測的比率<br>為最常見指標，但遇到不平衡的資料會失效|EX：偵測垃圾訊息<br>100 封信件裡僅有一封是垃圾信件<br>當全部都判為正常時，accuracy=0.99=\frac{0+99}{0+0+1+99}<br>其實模型沒有起到偵測作用
 Specificity|$\frac{TN}{TN+FP}$|表所有實際為陰性且被正確判斷為陰性之比率|
-Recall|$\frac{TP}{TP+FN}$|表所有實際為陽性且被正確判斷為陽性的比率<br>考量 FP 及 FN 影響較大者|EX：門禁系統<br>同仁被偵測為外人（FN）只要多刷幾次卡就好，較沒這麼嚴重
+Recall|$\frac{TP}{TP+FN}$|表所有實際為陽性且被正確判斷為陽性的比率<br>考量 FP 及 FN 影響較大者|EX：門禁系統<br>同仁被偵測為外人（FN）<br>只要多刷幾次卡就好，較沒這麼嚴重
 Precision|$\frac{TP}{TP+FP}$|表所有被判斷為陽性中實際確為陽性的比率<br>考量 FP 及 FN 影響較大者|EX：門禁系統<br>希望外人被偵測為同仁的機會（FP）越少越好
-F1 Score|$\frac{2\*Precision\*Recall}{Precision+Recall}$|綜合考量相同權重的 Precision 及 Recall|即是調和平均數<br>當不同模型的 Precision 及 Recall 此消彼長，即可以用綜合考量來評斷
-F Measure|$\frac{(1+\beta^{2})\*Precision\*Recall}{(\beta^{2})\*Precision+Recall}$|綜合考量不同權重的 Precision 及 Recall|當 Precision 和 Recall 一樣重要，belta=1 即為 F1 Score<br>較在意 Precision，belta=非負分數，當 belta=0 時，F Measure=Precision<br>較在意 Recall，belta>1，當 belta=\infty 時，F Measure=Recall
+F1 Score|$\frac{2\*Precision\*Recall}{Precision+Recall}$|綜合考量相同權重的 Precision 及 Recall|即是調和平均數<br>當不同模型的 Precision 及 Recall 此消彼長<br>即可以用綜合考量來評斷
+F Measure|$\frac{(1+\beta^{2})\*Precision\*Recall}{(\beta^{2}\*Precision)+Recall}$|綜合考量不同權重的 Precision 及 Recall|當 Precision 和 Recall 一樣重要<br>當 belta=1 即為 F1 Score；<br>較在意 Precision，belta=非負分數<br>當 belta=0 時，F Measure=Precision；<br>較在意 Recall，belta>1<br>當 belta=$\infty$ 時，F Measure=Recall；
 
 * Accuracy Paradox
   * 白話：Accuracy 不能代表模型的好壞
