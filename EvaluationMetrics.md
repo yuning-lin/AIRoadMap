@@ -35,8 +35,7 @@ F Measure|$\frac{(1+\beta^{2})\*Precision\*Recall}{(\beta^{2}\*Precision)+Recall
     * Accuracy=0.99、Recall=1、Precision=0.99、F1 Score=0.99
     * 雖然 Recall、Precision、F1 Score 都比 Accuracy 可以看到更多資訊，但以上四種指標皆無法解決 Accuracy Paradox 的問題
 * 對不平衡資料可能更適合的解法：
-  * 透過抽樣方法平衡資料
-  * 透過合成樣本平衡資料
+  * [透過抽樣方法、合成樣本來平衡資料](https://github.com/yuning-lin/MLRoadMap/blob/main/Modeling.md#%E5%B8%B8%E8%A6%8B%E4%B8%8D%E5%B9%B3%E8%A1%A1%E8%B3%87%E6%96%99class-imbalance%E8%99%95%E7%90%86%E6%96%B9%E5%BC%8F)
   * MCC（Matthews Correlation Coefficient）= $\frac{TP\*TN-FP\*FN}{\sqrt{(TP+FP)\*(TP+FN)\*(TN+FP)\*(TN+FN)}}$
   * ROC Curve（Receiver Operating Characteristic Curve）＆ AUC（Area Under the Curve）
 
@@ -55,3 +54,4 @@ Adjusted R-Squared|$1-\frac{\frac{\sum_{i=1}^{n}{(y_{i}-\hat{y_{i}})^{2}}}{n-p-1
 * [部落格：Evaluation Metrics : 分類模型](https://medium.com/ai%E5%8F%8D%E6%96%97%E5%9F%8E/evaluation-metrics-%E5%88%86%E9%A1%9E%E6%A8%A1%E5%9E%8B-ba17ad826599)
 * [部落格：不平衡資料的二元分類 1：選擇正確的衡量指標](https://taweihuang.hpd.io/2018/12/28/imbalanced-data-performance-metrics/)
 * [部落格：迴歸損失函數1：L1 loss, L2 loss以及Smooth L1 Loss的對比 ](https://www.cnblogs.com/wangguchangqing/p/12021638.html)
+* [教學網站：ROC curves and Area Under the Curve explained (video)](https://www.dataschool.io/roc-curves-and-auc-explained/)
