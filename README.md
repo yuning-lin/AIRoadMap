@@ -5,6 +5,56 @@
 ## 初步分析
 * [Org：如何開始探索性分析](https://www.finereport.com/tw/knowledge/acquire/for-beginners-in-data-analysis.html)
 
+## 常見的機器學習演算法
+
+<table>
+    <tr>
+        <td>類別</td>
+        <td>用途</td>
+        <td>演算法</td>
+    </tr>
+    <tr>
+        <td rowspan=2>監督式學習</td>
+        <td>預測</td>
+        <td>Linear Regression <br>
+            Decision Tree <br>
+            Random Forest <br>
+            Neural Network <br>
+            Gradient Boosting Tree <br>
+        </td>
+    </tr>
+    <tr>
+        <td>分類</td>
+        <td>Support Vector Machine(SVM) <br>
+            Naive Bayes(SVM) <br>
+            Logistic Regression <br>
+            Decision Tree <br>
+            Random Forest <br>
+            Neural Network <br>
+            Gradient Boosting Tree <br>
+        </td>
+    </tr>
+    <tr>
+        <td rowspan=3>非監督式學習</td>
+        <td>分群</td>
+        <td>K-means <br>
+            Density-Based Spatial Clustering of Applications with Noise(DBSCAN) <br>
+            Local Outlier Factor(LOF) <br>
+            Isolation Forest <br>
+            One-Class SVM <br>
+        </td>
+    </tr>
+    <tr>
+        <td>關聯</td>
+        <td>Apriori</td>
+    </tr>
+    <tr>
+        <td>降維</td>
+        <td>PCA</td>
+    </tr>
+</table>
+
+
 ## Machine Learning 推薦學習管道
 ### 線上課程
 * Cousera：[Andrew Ng](https://zh-tw.coursera.org/learn/machine-learning)
