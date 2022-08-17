@@ -22,6 +22,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0)
 model = DecisionTreeClassifier(random_state=0, splitter='random') # splitter='random', 一樣的資料每次跑會有一樣的模型
 model.fit(X_train, y_train)
 
+## 存 .dot 後畫圖
 dot_data = StringIO()
 export_graphviz(model, out_file=dot_data,
                 filled=True, rounded=True, impurity=False,
@@ -29,6 +30,17 @@ export_graphviz(model, out_file=dot_data,
                 feature_names=X_train.columns.tolist(),
                 class_names=model.classes_)
 graph = pydotplus.graph_from_dot_data(dot_data.getvalue())
+
+## 將決策樹中文字亂碼重編碼後，直接畫圖
+dot_data = export_graphviz(model, out_file=None,
+                           filled=True, rounded=True, impurity=False,
+                           special_characters=True, max_depth=3,
+                           feature_names=X_train.columns.tolist(),
+                           class_names=model.classes_)
+dot_data = dot_data.replace('helvetica', '"Microsoft YaHei"')
+graph = pydotplus.graph_from_dot_data(dot_data)
+
+## 畫圖
 graph.write_png(f'tree.png')
 Image(graph.create_png())
 ```
