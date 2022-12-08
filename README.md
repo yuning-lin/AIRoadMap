@@ -5,6 +5,13 @@
 ## 初步分析
 * [Org：如何開始探索性分析](https://www.finereport.com/tw/knowledge/acquire/for-beginners-in-data-analysis.html)
 
+## 常見的統計方法
+* [Statistical Analysis: Definition, Examples](https://www.statisticshowto.com/statistical-analysis/)
+* [What is Statistical Analysis? Types, Methods and Examples](https://www.simplilearn.com/what-is-statistical-analysis-article)
+* [常用25種統計方法](https://webftp.nkut.edu.tw/~092544/SPSS/25%E7%A8%AE%E7%B5%B1%E8%A8%88%E6%96%B9%E6%B3%95%E7%A7%98%E6%8A%80.pdf)
+* [統計學中資料分析方法彙總！](https://medium.com/%E6%95%B8%E6%93%9A%E5%88%86%E6%9E%90%E4%B8%8D%E6%98%AF%E5%80%8B%E4%BA%8B/%E7%B5%B1%E8%A8%88%E5%AD%B8%E4%B8%AD%E8%B3%87%E6%96%99%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95%E5%BD%99%E7%B8%BD-11d3de69670c)
+
+
 ## 常見的機器學習演算法
 
 <table>
