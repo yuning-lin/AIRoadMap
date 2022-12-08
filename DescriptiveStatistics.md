@@ -12,17 +12,19 @@
 * 全距（range）
 * 變異數（variance）
 * 標準差（standard deviation）
+* 平均絕對偏差（mean absolute deviation）
 
 ## 次數
 * 計數（count）
   * 類別各類次數分布
   * 異常值出現的次數
   * 空值出現的次數
-* 交叉次數分析
+* 次數分配（frequency distribution）
+* 交叉分析（cross analysis）
 
 ## 分布
-* 長條圖
-* 圓餅圖
-* 直方圖
-* 偏態
-* 峰態
+* 長條圖（bar chart）
+* 圓餅圖（pie chart）
+* 直方圖（histogram）
+* 偏態（skewness）
+* 峰態（kurtosis）
