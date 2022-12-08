@@ -13,6 +13,7 @@
 * 變異數（variance）
 * 標準差（standard deviation）
 * 平均絕對偏差（mean absolute deviation）
+* （[coefficient of range](https://allthingsstatistics.com/descriptive-statistics/coefficient-of-range/)）
 
 ## 次數
 * 計數（count）
@@ -20,7 +21,7 @@
   * 異常值出現的次數
   * 空值出現的次數
 * 次數分配（frequency distribution）
-* 交叉分析（cross analysis）
+* 列聯表（two way table）
 
 ## 分布
 * 長條圖（bar chart）
@@ -28,3 +29,6 @@
 * 直方圖（histogram）
 * 偏態（skewness）
 * 峰態（kurtosis）
+
+## 參考資料
+* [Org：All Things Statistics－Descriptive Statistics](https://allthingsstatistics.com/descriptive-statistics/)
